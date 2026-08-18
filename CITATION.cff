@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated cervical-cancer stage-transcriptional-state article."
+title: "TCGA-CESC stage-associated transcriptional reprogramming"
+type: software
+authors:
+  - family-names: Kushwah
+    given-names: Atar Singh
+date-released: 2026-08-18
+license: MIT
+repository-code: "https://github.com/atarskushwah/TCGA-CESC-Stage-Transcriptional-Reprogramming"
