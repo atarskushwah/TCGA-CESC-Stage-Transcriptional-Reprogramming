@@ -68,7 +68,13 @@ docs/PROGNOSTIC_EXTENSION_REQUIREMENTS.md
 - `results/figures/Figure1_stage_histology_distribution.{png,svg}`
 - `results/figures/Figure2_stage_association_effects.{png,svg}`
 - `results/figures/Figure3_nominal_gene_stage_trajectories.{png,svg}`
-
+  
+## Execution Order to Reproduce Results
+To reproduce the analyses presented in the manuscript, execute the scripts in the following order:
+1. `01_curate_cohort.py` - Cleans the stage denominator and excludes normal samples.
+2. `02_calculate_FDR.R` - Recalculates the Benjamini-Hochberg FDR values for the 25-gene panel.
+3. `03_harmonize_OncoDB.py` - Consolidates the OncoDB 2.0 sensitivity analysis outputs.
+   
 ## Figure typography
 
 The plotting code requests **Times New Roman**. Linux CI runners may fall back to a Times-compatible serif. SVG text remains editable and is the preferred source for final journal typography adjustment on a workstation with Times New Roman installed.
